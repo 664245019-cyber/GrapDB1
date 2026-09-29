@@ -96,6 +96,8 @@ def explain_reason(row: dict) -> str:
 require_connection()
 
 with st.sidebar:
+    with open("assets/anutin.jpg", "rb") as f:
+        profile_img = base64.b64encode(f.read()).decode()
     st.markdown("## 📚 GraphBook")
     st.caption("Neo4j Aura + Streamlit")
     page = st.radio(
