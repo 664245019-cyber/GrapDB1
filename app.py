@@ -119,7 +119,7 @@ with st.sidebar:
         """,
         unsafe_allow_html=True,
     )
-    st.caption("Neo4j Aura + Streamlit")
+
     page = st.radio(
         "เมนู",
         ["Dashboard", "Recommendations", "Book Search", "Borrow / Rate", "Graph Explorer", "Admin / Setup"],
