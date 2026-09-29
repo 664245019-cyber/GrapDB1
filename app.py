@@ -116,7 +116,7 @@ st.markdown(
 )
 
 if page == "Dashboard":
-    with open(r"C:\Users\Admin\Desktop\GrapDB1\assets\anutin.jpg", "rb") as f:
+    with open("assets/anutin.jpg", "rb") as f:
         img = base64.b64encode(f.read()).decode()
 
     st.markdown(
