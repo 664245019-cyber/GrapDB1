@@ -98,7 +98,27 @@ require_connection()
 with st.sidebar:
     with open("assets/anutin.jpg", "rb") as f:
         profile_img = base64.b64encode(f.read()).decode()
-    st.markdown("## 📚 GraphBook")
+    st.markdown(
+        f"""
+        <div style="text-align:center;">
+            <img src="data:image/jpg;base64,{profile_img}"
+            style="
+                width:120px;
+                height:120px;
+                border-radius:50%;
+                object-fit:cover;
+                border:4px solid #0f766e;
+                margin-bottom:10px;
+            ">
+            
+            <h3 style="margin:0;">📚 GraphBook</h3>
+            <p style="font-size:13px;opacity:0.7;">
+                Neo4j Aura + Streamlit
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
     st.caption("Neo4j Aura + Streamlit")
     page = st.radio(
         "เมนู",
