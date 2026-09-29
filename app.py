@@ -103,9 +103,9 @@ with st.sidebar:
         <div style="text-align:center;">
             <img src="data:image/jpg;base64,{profile_img}"
             style="
-                width:120px;
+                width:100px;
                 height:120px;
-                border-radius:50%;
+                border-radius:70%;
                 object-fit:cover;
                 border:4px solid #0f766e;
                 margin-bottom:10px;
