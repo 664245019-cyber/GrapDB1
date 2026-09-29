@@ -103,7 +103,7 @@ with st.sidebar:
         <div style="text-align:center;">
             <img src="data:image/jpg;base64,{profile_img}"
             style="
-                width:120px;
+                width:180px;
                 height:350px;
                 border-radius:0;
                 object-fit:cover;
