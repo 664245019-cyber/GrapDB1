@@ -105,7 +105,7 @@ with st.sidebar:
             style="
                 width:100px;
                 height:120px;
-                border-radius:70%;
+                
                 object-fit:cover;
                 border:4px solid #0f766e;
                 margin-bottom:10px;
