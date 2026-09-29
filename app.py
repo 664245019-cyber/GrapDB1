@@ -4,6 +4,7 @@ from datetime import date
 
 import pandas as pd
 import streamlit as st
+import base64
 
 from neo4j_service import (
     get_dashboard_metrics,
@@ -115,6 +116,37 @@ st.markdown(
 )
 
 if page == "Dashboard":
+    with open(r"C:\Users\Admin\Desktop\GrapDB1\assets\anutin.jpg", "rb") as f:
+        img = base64.b64encode(f.read()).decode()
+
+    st.markdown(
+        f"""
+        <style>
+        .stApp {{
+            background-image: url("data:image/jpg;base64,{img}");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }}
+
+        /* กล่องเนื้อหา Dashboard */
+        .block-container {{
+            background-color: rgba(255,255,255,0.88);
+            border-radius: 20px;
+            padding: 2rem;
+        }}
+
+        /* ให้ metric cards อ่านง่าย */
+        div[data-testid="metric-container"] {{
+            background-color: rgba(255,255,255,0.9);
+            border-radius: 15px;
+            padding: 15px;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
     st.subheader("ภาพรวมระบบ")
     m = get_dashboard_metrics()
     c1, c2, c3, c4 = st.columns(4)
