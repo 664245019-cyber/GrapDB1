@@ -104,7 +104,7 @@ with st.sidebar:
             <img src="data:image/jpg;base64,{profile_img}"
             style="
                 width:100px;
-                height:150px;
+                height:350px;
                 border-radius:0;
                 object-fit:cover;
                 border:none;
