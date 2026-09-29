@@ -107,7 +107,7 @@ with st.sidebar:
                 height:150px;
                 border-radius:0;
                 object-fit:cover;
-                border:4px solid #0f766e;
+                border:none;
                 margin-bottom:10px;
             ">
             
