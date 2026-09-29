@@ -111,10 +111,7 @@ with st.sidebar:
                 margin-bottom:10px;
             ">
             
-            <h3 style="margin:0;">📚 GraphBook</h3>
-            <p style="font-size:13px;opacity:0.7;">
-                Neo4j Aura + Streamlit
-            </p>
+            
         </div>
         """,
         unsafe_allow_html=True,
