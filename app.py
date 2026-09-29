@@ -124,7 +124,7 @@ if page == "Dashboard":
         <style>
         .stApp {{
             background-image: url("data:image/jpg;base64,{img}");
-            background-size: cover;
+            background-size: 100% auto;
             background-position: center;
             background-attachment: fixed;
         }}
